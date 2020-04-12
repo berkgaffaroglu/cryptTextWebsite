@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
-  <h1>Decrypt The Text</h1>
+  <center><h1>Decrypt The Text</h1></center>
 <div class="content-section">
 
         <form method="POST" action="">
@@ -38,7 +38,7 @@
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
             <small class="text-muted ml-2">
-                <a href={{ url_for('encrypt') }}>Wanna decrypt?</a>
+                <a href={{ url_for('encrypt') }}>Wanna encrypt?</a>
             </small>
         </form>
     </div>
