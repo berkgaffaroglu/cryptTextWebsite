@@ -9,4 +9,4 @@ class encryptForm(FlaskForm):
 class decryptForm(FlaskForm):
     normalText = TextAreaField('Encrypted Text', validators=[Length(min=2, max=256)])
     key = StringField('Your Key', validators=[Length(min=2, max=100)])
-    submit = SubmitField('Encrypt Text')
+    submit = SubmitField('Decrypt Text')
