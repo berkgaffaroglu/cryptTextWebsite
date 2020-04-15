@@ -2,6 +2,7 @@ from flask import Flask,render_template,url_for,flash
 from forms import decryptForm,encryptForm
 from cryption import encryptMessage,generateKey,decryptMessage
 app = Flask(__name__)
+server = app.server
 app.config['SECRET_KEY'] = '7908e7a467af3317a4e7f2b4324fdc03'
 
 @app.route('/')
