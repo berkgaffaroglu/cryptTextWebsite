@@ -1,1 +1,1 @@
-web: gunicorn src.main:app --log-file=-
+web: gunicorn run:my_awesome_app
